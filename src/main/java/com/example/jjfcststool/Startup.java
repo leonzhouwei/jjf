@@ -14,11 +14,11 @@ public class Startup extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource(
-				"/fxml/startup.fxml"));
+				"/fxml/main.fxml"));
 
-		Scene scene = new Scene(root, 300, 275);
+		Scene scene = new Scene(root);
 
-		stage.setTitle("FXML Welcome");
+		stage.setTitle("JJF");
 		stage.setScene(scene);
 		stage.show();
 	}

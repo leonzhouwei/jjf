@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.example.jjfcststool.controller.MainController">
+  <children>
+    <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="A.3.1 测量重复性引起的标准不确定度">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <Label text="输入（mm）：" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    <TextField fx:id="a_3_1_textField1" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                    <TextField fx:id="a_3_1_textField2" prefWidth="100.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="30.0" />
+                    <TextField fx:id="a_3_1_textField3" prefWidth="100.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="30.0" />
+                    <TextField fx:id="a_3_1_textField4" prefWidth="100.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="30.0" />
+                    <TextField fx:id="a_3_1_textField5" prefWidth="100.0" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="30.0" />
+                    <TextField fx:id="a_3_1_textField6" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+                    <TextField fx:id="a_3_1_textField7" prefWidth="100.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="60.0" />
+                    <TextField fx:id="a_3_1_textField8" prefWidth="100.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="60.0" />
+                    <TextField fx:id="a_3_1_textField9" prefWidth="100.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="60.0" />
+                    <TextField fx:id="a_3_1_textField10" prefWidth="100.0" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="60.0" />
+                    <Separator prefWidth="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+                    <Label layoutX="30.0" text="标准不确定度（um）：" AnchorPane.topAnchor="180.0" />
+                    <TextField fx:id="a_3_1_result" prefWidth="200.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="180.0" />
+                    <Separator prefWidth="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+                    <Button mnemonicParsing="false" onAction="#a_3_1_clicked" text="计算" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="120.0" />
+                  </children>
+                  <padding>
+                    <Insets bottom="30.0" left="30.0" right="30.0" top="10.0" />
+                  </padding>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="无标题选项卡 2">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
