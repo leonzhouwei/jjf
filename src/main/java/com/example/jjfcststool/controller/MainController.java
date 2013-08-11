@@ -6,6 +6,8 @@ import javafx.scene.control.Tab;
 
 import javax.annotation.Resource;
 
+import com.example.jjfcststool.view.model.GuiElemDefine;
+
 public class MainController extends SuperController {
 	
 	@FXML
@@ -21,7 +23,7 @@ public class MainController extends SuperController {
 	}
 	
 	public void init() {
-		stage.setTitle("JJF");
+		stage.setTitle(GuiElemDefine.MAIN_WINDOW_TTTLE);
 		tab1.setContent(a_3_1_Controller.getView());
 	}
 	
