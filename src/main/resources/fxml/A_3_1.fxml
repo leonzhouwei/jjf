@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.example.jjfcststool.controller.A_3_1_Controller">
+    <children>
+        <Label text="输入（mm）：" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <TextField fx:id="textField1" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0" />
+        <TextField fx:id="textField2" prefWidth="100.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="30.0" />
+        <TextField fx:id="textField3" prefWidth="100.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="30.0" />
+        <TextField fx:id="textField4" prefWidth="100.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="30.0" />
+        <TextField fx:id="textField5" prefWidth="100.0" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="30.0" />
+        <TextField fx:id="textField6" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="textField7" prefWidth="100.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="textField8" prefWidth="100.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="textField9" prefWidth="100.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="textField10" prefWidth="100.0" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="60.0" />
+        <Separator prefWidth="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+        <Label layoutX="30.0" text="标准不确定度（um）：" AnchorPane.topAnchor="180.0" />
+        <TextField fx:id="result" prefWidth="200.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="180.0" />
+        <Separator prefWidth="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+        <Button mnemonicParsing="false" onAction="#calculate" text="计算" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="120.0" />
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="10.0" />
+    </padding>
+</AnchorPane>
