@@ -1,37 +1,20 @@
 package com.example.jjfcststool.controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
+import javafx.scene.Parent;
+import javafx.scene.control.Tab;
 
-public class MainController {
+public class MainController extends SuperController {
 	
 	@FXML
-	private TextField a_3_1_textField1;
+	private Parent root;
 	@FXML
-	private TextField a_3_1_textField2;
-	@FXML
-	private TextField a_3_1_textField3;
-	@FXML
-	private TextField a_3_1_textField4;
-	@FXML
-	private TextField a_3_1_textField5;
-	@FXML
-	private TextField a_3_1_textField6;
-	@FXML
-	private TextField a_3_1_textField7;
-	@FXML
-	private TextField a_3_1_textField8;
-	@FXML
-	private TextField a_3_1_textField9;
-	@FXML
-	private TextField a_3_1_textField10;
-	@FXML
-	private TextField a_3_1_result;
-	
-	@FXML
-	private void a_3_1_clicked(ActionEvent actionEvent) {
-		a_3_1_result.setText("haha");
+	private Tab tab1;
+
+	@Override
+	public Parent getView() {
+		System.out.println(root);
+		return root;
 	}
 	
 }
