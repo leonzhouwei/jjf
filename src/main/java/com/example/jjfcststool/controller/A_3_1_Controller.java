@@ -7,13 +7,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import com.example.jjfcststool.util.Util;
 
 public class A_3_1_Controller {
 	
-	private Stage parent;
+	private MainController parent;
 	@FXML
 	private Parent root;
 	@FXML
@@ -43,11 +42,11 @@ public class A_3_1_Controller {
 		return root;
 	}
 
-	public Stage getParent() {
+	public MainController getParent() {
 		return parent;
 	}
 
-	public void setParent(Stage parent) {
+	public void setParent(MainController parent) {
 		this.parent = parent;
 	}
 	

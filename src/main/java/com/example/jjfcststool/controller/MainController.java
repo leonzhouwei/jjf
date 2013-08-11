@@ -24,6 +24,7 @@ public class MainController extends SuperController {
 	
 	public void init() {
 		stage.setTitle(GuiElemDefine.MAIN_WINDOW_TTTLE);
+		a_3_1_Controller.setParent(this);
 		tab1.setContent(a_3_1_Controller.getView());
 	}
 	
