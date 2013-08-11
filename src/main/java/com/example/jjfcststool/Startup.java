@@ -39,7 +39,6 @@ public class Startup extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			try {
 				loader.load(new FileInputStream(child));
-				System.out.println(child.getName());
 				controllers.put(child.getName(), loader.getController());
 			} catch (Exception e) {
 				System.err.println("Cannot load FXML: " + child.getName());
