@@ -25,15 +25,6 @@ public class Startup extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		// Parent root =
-		// FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
-		// System.out.println(root);
-		// Scene scene = new Scene(root);
-		//
-		// stage.setTitle("JJF");
-		// stage.setScene(scene);
-		// stage.show();
-
 		// 加载全部 .fxml 文件
 		String path = getClass().getResource("/fxml").getPath();
 		if (path.startsWith("file:")) {
@@ -51,21 +42,24 @@ public class Startup extends Application {
 				System.out.println(child.getName());
 				controllers.put(child.getName(), loader.getController());
 			} catch (Exception e) {
-				System.err.println("Cannot load FXML:" + child.getName());
+				System.err.println("Cannot load FXML: " + child.getName());
 			}
 		}
 
-		// spring
+		// 将所有的 Controller 交给 Spring 管理
 		final ApplicationContext context = new ClassPathXmlApplicationContext("/beans.xml");
+		
+		// 初始化主界面
 		MainController mc = context.getBean(MainController.class);
 		mc.create(new Stage(), stage);
+		mc.init();
+		// 显示主界面
 		mc.show();
-		System.out.println(mc);
-		System.out.println(mc.getView());
 	}
 
 	@SuppressWarnings("unchecked")
 	public static <T> T getController(String fxml) {
 		return (T) controllers.get(fxml);
 	}
+	
 }

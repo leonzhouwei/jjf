@@ -4,17 +4,25 @@ import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.Tab;
 
+import javax.annotation.Resource;
+
 public class MainController extends SuperController {
 	
 	@FXML
 	private Parent root;
 	@FXML
 	private Tab tab1;
+	@Resource
+	private A_3_1_Controller a_3_1_Controller;
 
 	@Override
 	public Parent getView() {
-		System.out.println(root);
 		return root;
+	}
+	
+	public void init() {
+		stage.setTitle("JJF");
+		tab1.setContent(a_3_1_Controller.getView());
 	}
 	
 }
