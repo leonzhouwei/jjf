@@ -1,5 +1,10 @@
 package com.example.jjfcststool.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.jjfcststool.util.Util;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -31,6 +36,8 @@ public class A_3_1_Controller {
 	private TextField textField9;
 	@FXML
 	private TextField textField10;
+	@FXML
+	private TextField resultTextFiled;
 	
 	public Parent getView() {
 		return root;
@@ -46,6 +53,56 @@ public class A_3_1_Controller {
 	
 	@FXML
 	private void calculate(ActionEvent actionEvent) {
-		textField1.setText("haha");
+		List<Double> list = getInput();
+		Double standardVariance = Util.getDoubleStandardVariance(list);
+		String text = Double.toString(standardVariance*1000);
+		resultTextFiled.setText(text);
 	}
+	
+	private List<Double> getInput() {
+		List<Double> list = new ArrayList<Double>();
+		Double d = null;
+		d = Util.getDouble(textField1);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField2);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField3);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField4);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField5);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField6);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField7);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField8);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField9);
+		if (d != null) {
+			list.add(d);
+		}
+		d = Util.getDouble(textField10);
+		if (d != null) {
+			list.add(d);
+		}
+		return list;
+	}
+	
 }
