@@ -1,5 +1,6 @@
 package com.example.jjfcststool.util;
 
+import java.text.NumberFormat;
 import java.util.List;
 
 import javafx.scene.control.TextField;
@@ -48,6 +49,10 @@ public final class Util {
 		result /= list.size() - 1;
 		result = Math.sqrt(result);
 		return result;
+	}
+	
+	public static final String toString(Double d) {
+		return NumberFormat.getInstance().format(d);
 	}
 	
 }

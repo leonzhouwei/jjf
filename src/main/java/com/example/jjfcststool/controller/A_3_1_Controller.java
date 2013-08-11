@@ -3,13 +3,13 @@ package com.example.jjfcststool.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.jjfcststool.util.Util;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import com.example.jjfcststool.util.Util;
 
 public class A_3_1_Controller {
 	
@@ -55,7 +55,7 @@ public class A_3_1_Controller {
 	private void calculate(ActionEvent actionEvent) {
 		List<Double> list = getInput();
 		Double standardVariance = Util.getDoubleStandardVariance(list);
-		String text = Double.toString(standardVariance*1000);
+		String text = Util.toString(standardVariance*1000);
 		resultTextFiled.setText(text);
 	}
 	
