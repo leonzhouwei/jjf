@@ -1,5 +1,8 @@
 package com.example.jjfcststool.controller;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -15,7 +18,8 @@ public abstract class SuperController {
 			return this;
 		}
 		this.stage = stage;
-		Scene scene = new Scene(getView());
+		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+		Scene scene = new Scene(getView(), dimension.getWidth(), dimension.getWidth());
 		stage.setScene(scene);
 		if (parent != null) {
 			stage.initOwner(parent);

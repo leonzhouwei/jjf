@@ -16,6 +16,10 @@ public class MainController extends SuperController {
 	private Tab tab1;
 	@Resource
 	private A_3_1_Controller a_3_1_Controller;
+	@FXML
+	private Tab tab2;
+	@Resource
+	private ShiyanshaiB_Controller shiyanshaib_Controller;
 
 	@Override
 	public Parent getView() {
@@ -26,6 +30,7 @@ public class MainController extends SuperController {
 		stage.setTitle(GuiElemDefine.MAIN_WINDOW_TTTLE);
 		a_3_1_Controller.setParent(this);
 		tab1.setContent(a_3_1_Controller.getView());
+		tab2.setContent(shiyanshaib_Controller.getView());
 	}
 	
 }
